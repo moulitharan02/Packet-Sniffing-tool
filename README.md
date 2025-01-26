@@ -1,3 +1,7 @@
+
+---
+
+```markdown
 # NetShield
 
 NetShield is a versatile **network security toolkit** for **Kali Linux**. It combines packet sniffing, ARP protection, DNS analysis, intrusion detection, port scanning, and traffic visualization, offering network administrators and security researchers a comprehensive way to monitor and secure networks.
@@ -16,10 +20,6 @@ NetShield is a versatile **network security toolkit** for **Kali Linux**. It com
 
 ---
 
-Here’s the corrected code block for the **Installation** section:
-
-```markdown
-
 ## Installation
 
 1. Clone the repository:
@@ -37,6 +37,53 @@ Here’s the corrected code block for the **Installation** section:
    ```bash
    sudo python3 netsecsuite.py
    ```
-``` 
 
-You can copy this directly into your `README.md` file! 😊
+---
+
+## Usage
+
+Start NetShield and select an option from the menu:
+
+```bash
+sudo python3 netsecsuite.py
+```
+
+Command-line options:
+- `--sniff` - Start packet sniffer.
+- `--scan <target>` - Perform a port scan.
+- `--arp` - Enable ARP protection.
+- `--dns` - Analyze DNS traffic.
+- `--visualize` - Visualize network traffic.
+
+Example:
+```bash
+sudo python3 netsecsuite.py --scan 192.168.1.1
+```
+
+---
+
+## Logs
+
+- **Traffic Logs**: `logs/traffic.log` - Network traffic details.
+- **Alerts Logs**: `logs/alerts.log` - Security alerts.
+
+---
+
+## License
+
+NetShield is open-source and licensed under the **MIT License**.
+
+---
+
+## Disclaimer
+
+NetShield is for educational and authorized security testing only. The authors are not liable for misuse of the tool.
+
+---
+
+## Contact
+
+- GitHub: [moulitharan02](https://github.com/moulitharan02)
+```
+
+---
